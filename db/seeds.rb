@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+user = User.create(username: 'Amelia', password: 'cheetah1')
+10.times do |n|
+  Post.create!(body: "This is how I am feeling #{n}", user: user)
+end
